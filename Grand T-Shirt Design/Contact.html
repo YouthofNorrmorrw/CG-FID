@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>Grand T-Shirt Design</title>
+<title>Contact</title>
 <link href='http://fonts.googleapis.com/css?family=Marko+One' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="Styles.css" > 
 </head>
@@ -63,22 +63,34 @@ li a:hover {
 <div id="info">
 
 <ul>
-  <li><a class="active" href="#home">Home</a></li>
+  <li><a class="active" href="index.html">Home</a></li>
   <li><a href="Designer.html">Designer</a></li>
   <li><a href="About.html">About</a></li>
-  <li><a href="Contact.html">Contact</a></li>
 </ul>
 </head>
 <body>
 </header>
-<p>
-<a href="OrderShirts.html"><img src="images/1.jpg" alt="1"></a>
-<a href="OrderShirts.html"><img src="images/2.jpg" alt="2"></a>
-<a href="OrderShirts.html"><img src="images/3.jpg" alt="3"></a>
-<a href="OrderShirts.html"><img src="images/4.jpg" alt="4"></a>
-<a href="OrderShirts.html"><img src="images/5.jpg" alt="5"></a>
-<a href="OrderShirts.html"><img src="images/6.jpg" alt="6"></a>
-</p>
+<h1>Contact</h1>
+<div id="after_submit"></div>
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+  <div class="row">
+    <label class="required" for="name">Your name:</label><br />
+    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+    <span id="name_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="email">Your email:</label><br />
+    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+    <span id="email_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="message">Your message:</label><br />
+    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+    <span id="message_validation" class="error_message"></span>
+  </div>
+    
+    <input id="submit_button" type="submit" value="Send email" />
+</form>
 
 <hr class="new5">
 
